@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덕담 하나 주면 안 잡아먹지!</title>
+
+    <meta property="og:title" content="Misty 님의 덕담 페이지" />
+    <meta property="og:description" content="덕담 한마디 남겨주세요!" />
+    <meta property="og:image" content="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/ogimage.png" />
+
+    <style>
+        @font-face {
+            font-family: 'Cafe24Ssurround';
+            /* 폰트 파일의 이름 설정 */
+            src: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/Cafe24Ssurround.woff') format('woff');
+            /* 폰트 파일의 url과 포맷 설정, 폰트 파일을 구글 드라이브 등에 업로드 해놓고 url을 넣으면 된다*/
+        }
+
+
+
+        * {
+            /* *은 전체에 적용하겠다는 뜻 */
+            font-family: 'Cafe24Ssurround';
+        }
+
+
+
+
+        .background {
+            width: 100vw;
+            height: 100vh;
+
+            max-width: 450px;
+
+            background-image: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/bg_default.png');
+            background-position: center;
+            background-size: cover;
+            /* 이미지 사이즈를 스타일(css)에 설정해놓은 크기로 맞춘다. */
+            margin: auto;
+            /* 웹브라우저의 상하좌우 가운데에 놓기 */
+
+        }
+
+        body,
+        h1,
+        p {
+            margin: 0px;
+
+        }
+
+        .title {
+            /* background-color: green; div는 눈에 안보이기 때문에 임시적으로 배경 색을 넣어주면 편하다 */
+
+            color: #3f3732;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: 5vh;
+            /* 사용자 기기 세로 길이의 윗부분의 5%(100분의 5)를 띄운다 */
+        }
+
+        .title>h1 {
+            /* title 안에 있는 h1을 꾸미겠다 */
+            font-size: 22px;
+            background-color: white;
+            padding: 8px 16px;
+            /* 안 쪽으로 여백 키우기는 padding이 편하다. 상하 8px, 좌우 16px을 띄운다 */
+            border-radius: 16px;
+            /* 모서리 둥글게*/
+            margin-bottom: 16px;
+            /* 밑의 간격 띄우기 */
+        }
+
+        .title>p {
+            font-size: 18px;
+        }
+
+        .title>p>span {
+            font-size: 22px;
+
+        }
+
+        .btn {
+            background-color: #3f3732;
+            color: white;
+
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+
+            font-size: 18px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            cursor: pointer;
+            /* 마우스가 버튼에 닿으면 손가락 모양으로 변함 */
+
+            position: fixed;
+            /* 무조건 그 자리에 고정, 스크롤 상관 X */
+
+            bottom: 16px;
+            /* 아래에서 16px 위 */
+
+            left: calc(50% - 150px);
+            /* 띄고 중요함, 버튼을 가운데로 밀착, 150px로 하는 이유는 기준이 버튼의 왼쪽모서리이고, 가로 길이가 300px이기 때문 */
+        }
+
+        .box>img {
+            width: 70px;
+            position: absolute;
+            /* absolute를 사용하면 fixed와 마찬가지로 bottom하고 left 같은 것을 사용할 수 있다 */
+            bottom: 50%;
+            left: 50%;
+        }
+    </style>
+    <script src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/free_newyear_2022.js"></script>
+    <script> let mycode = 'be3f979a8665226d16f1416dc198a7d6'; </script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="title">
+            <h1>덕담 하나 주면 안 잡아먹지!</h1>
+            <p>Misty가 받은 덕담: <span>2개</span></p><!-- 사이즈가(스타일이) 다른 폰트는 따로 span으로 묶어주기 -->
+        </div>
+        <div class="box">
+            <!-- <img onclick="alert('새해복!')" src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/object3.png"> -->
+
+        </div>
+        <div class="btn">바구니에 덕담 남기기</div>
+    </div>
+</body>
+
+</html>
